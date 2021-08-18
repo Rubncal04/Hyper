@@ -13,6 +13,6 @@ for i in range(1, 3):
 avarage = ((final_weight + first_weight) / 3)
 
 if avarage < first_weight:
-	print(f"You´re lost weight {avarage - first_weight}")
+	print(f"You´re lost weight: {avarage - first_weight}")
 else:
-	print(f"You´re got weight {avarage - first_weight}")
+	print(f"You´re got weight: {avarage - first_weight}")
