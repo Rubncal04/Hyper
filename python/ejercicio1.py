@@ -19,4 +19,4 @@ while found < 0:
 	
 if trying < 4:
 
-	print("Welcome Ruben")
+	print("Welcome. This is your interactive site")
