@@ -6,7 +6,7 @@ d: el menor elemento"""
 
 numbers = []
 
-rounds = 5
+rounds = 6
 
 higher = int(input("Enter the first number: "))
 
@@ -16,7 +16,7 @@ smallest = numbers[0]
 
 
 for i in range(1,rounds):
-	number = int(input(f"Enter tne {i + 1}° number: "))
+	number = int(input(f"Enter the {i + 1}° number: "))
 
 	numbers.append(number)
 
