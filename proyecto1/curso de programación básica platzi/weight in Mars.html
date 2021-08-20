@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weight in Mars</title>
+</head>
+<body>
+	<h1>Your weight on another planets</h1>
+	<p>You weigh is differently than Mars or Jupiter!</p>
+
+	<script type="text/javascript">
+		var g_earth = 9.8;
+		var g_Mars = 3.7;
+		var g_jupiters = 24.8;
+		var weightUser = parseFloat(prompt("What´s your weight: "));
+		var endweight;
+		endweight = weightUser * g_Mars / g_earth;
+		endweight = (endweight.toFixed(1));
+		document.write("Your weight on Mars is <strong>" + endweight + "kg</strong>");
+
+
+	</script>
+</body>
+</html>
