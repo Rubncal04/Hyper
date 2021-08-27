@@ -21,6 +21,9 @@ var pig = {
   loadOk: false
 };
 
+numCow = aleatory(5, 9);
+numPig = aleatory(1, 2);
+
 gross.object = new Image();
 gross.object.src = gross.url;
 gross.object.addEventListener("load", drawGross);
@@ -73,7 +76,15 @@ function draw()
   }
   if(cow.loadOk)
   {
-    paper.drawImage(cow.object, 20, 300);
+    for(var v = 0; v < numCow; v ++)
+    {
+      var x = aleatory(0, 5);
+      var y = aleatory(0, 4);
+      var x = x * 70;
+      var y = y * 70;
+      paper.drawImage(cow.object, x, y);
+    }
+
   }
   if(chicken.loadOk)
   {
@@ -81,7 +92,14 @@ function draw()
   }
   if(pig.loadOk)
   {
-    paper.drawImage(pig.object, 370, 20);
+    for(var p = 0; p < numPig; p ++)
+    {
+      var xx = aleatory(0, 5);
+      var yy = aleatory(0, 4);
+      var xx = xx * 70;
+      var yy = yy * 70;
+      paper.drawImage(pig.object, xx, yy);
+    }
   }
 }
 
